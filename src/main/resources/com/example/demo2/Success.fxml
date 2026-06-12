@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com" xmlns:fx="http://javafx.com" fx:controller="com.example.demo2.SuccessController">
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+    <Label text="LOGIN BERHASIL!" style="-fx-font-size: 22px; -fx-text-fill: #black; -fx-font-weight: bold;"/>
+    <Label text="Selamat datang! Anda sukses masuk ke sistem utama."/>
+    <Button text="Keluar (Log Out)" onAction="#handleLogout"/>
+</VBox>

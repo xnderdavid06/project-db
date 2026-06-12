@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="15" xmlns="http://javafx.com" xmlns:fx="http://javafx.com" fx:controller="com.example.demo2.LoginController">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <!-- Baris 0 -->
+    <Label text="FORM LOGIN" style="-fx-font-size: 18px; -fx-font-weight: bold;"
+           GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+
+    <!-- Baris 1 -->
+    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="loginUser" promptText="Masukkan username" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <!-- Baris 2 -->
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <PasswordField fx:id="loginPass" promptText="Masukkan password" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <!-- Baris 3 -->
+    <Button text="Masuk" onAction="#handleLogin" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <!-- Baris 4 -->
+    <Hyperlink text="Belum punya akun? Daftar" onAction="#goToRegister" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.halignment="RIGHT"/>
+
+    <!-- Baris 5 -->
+    <Label fx:id="loginMessage" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+</GridPane>
